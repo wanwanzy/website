@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>管理中心 - 病患列表 </title>
+    <meta name="Copyright" content="Douco Design." />
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+
+
+</head>
+<body>
+<div id="dcWrap">
+    <div id="dcHead"style="background-color: #3e454b">
+        <div id="head">
+            <div class="logo"style="background-color: #60BBFF"><a href="index.html"></a></div>
+
+            <!--  <div class="nav">-->
+            <!--   <ul class="navRight">-->
+            <!--    <li class="M noLeft"><a href="JavaScript:void(0);">您好，admin</a>-->
+            <!--     <div class="drop mUser">-->
+            <!--      <a href="manager.php?rec=edit&id=1">编辑我的个人资料</a>-->
+            <!--      <a href="manager.php?rec=cloud_account">设置云账户</a>-->
+            <!--     </div>-->
+            <!--    </li>-->
+            <!--    <li class="noRight"><a href="login.php?rec=logout">退出</a></li>-->
+            <!--   </ul>-->
+            <!--  </div>-->
+            <div style="width: 86%;float: right">
+                <p style="text-align: center;color: #fff;font-size: 20px;padding: 5px ;font-family:宋体;">医 学 影 像 智 能 辅 助 诊 断 系 统</p>
+            </div>
+        </div>
+    </div>
+    <!-- dcHead 结束 --> <div id="dcLeft"><div id="menu">
+    <ul class="top">
+        <li><a href="index.html"><i class="home"></i><em>管理首页</em></a></li>
+    </ul>
+    <ul class="bot">
+        <li><a href="#"><i class="backup"></i><em>我的问诊</em></a></li>
+    </ul>
+    <ul>
+        <li class="cur"style="background: #3e454b url(images/menu_cur.gif) no-repeat right 50%;"><a href="patient.html"><i class="patient"></i><em>患者列表</em></a></li>
+        <li style="margin-left: 15px"><a href="info.html"><i class="nav"></i><em>具体信息</em></a></li>
+        <li style="margin-left: 15px"><a href="Generate.html"><i class="page"></i><em>报告生成</em></a></li>
+        <li style="margin-left: 15px"><a href="fina-report.html"><i class="articleCat"></i><em>最终报告</em></a></li>
+
+    </ul>
+    <ul>
+        <li><a href="#"><i class="mobile"></i><em>消息中心</em></a></li>
+    </ul>
+    <ul>
+        <li><a href="#"><i class="theme"></i><em>个人中心</em></a></li>
+    </ul>
+
+
+</div></div>
+    <div id="dcMain">
+        <!-- 当前位置 -->
+        <div id="urHere">管理中心<b>></b><strong>病患列表</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+        <h3><a href="addmanager.html?rec=add" class="actionBtn">添加病患</a>病患列表</h3>
+
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+                <th width="10%" align="center">ID</th>
+                <th width="10%"align="center">姓名</th>
+                <th width="10%"align="center">性别</th>
+                <th width="10%"align="center">年龄</th>
+                <th width="10%"align="center">主治医生</th>
+                <th width="40%"align="center">主诉</th>
+                <th width="10%"align="center">查看</th>
+            </tr>
+            <tr>
+                <td align="center">100001</td>
+                <td align="center">李**</td>
+                <td align="center">男</td>
+                <td align="center">21</td>
+                <td align="center">肖医生</td>
+                <td align="center">经常出现呼吸困难，气短症状，颈部根部出现肿胀……</td>
+                <td align="center"><a href="info.html">编辑</a> | <a href="info.html">删除</a></td>
+            </tr>
+            <tr>
+                <td align="center">100002</td>
+                <td align="center">王**</td>
+                <td align="center">女</td>
+                <td align="center">32</td>
+                <td align="center">赵医生</td>
+                <td align="center">月经周期混乱，声音轻微嘶哑，吞咽正常……</td>
+                <td align="center"><a href="info.html">编辑</a> | <a href="info.html">删除</a></td>
+            </tr>
+            <tr>
+                <td align="center">100003</td>
+                <td align="center">李**</td>
+                <td align="center">女</td>
+                <td align="center">27</td>
+                <td align="center">赵医生</td>
+                <td align="center">轻微吞咽不适，时常心跳加快，暂无其他症状……</td>
+                <td align="center"><a href="info.html">编辑</a> | <a href="info.html">删除</a></td>
+            </tr>
+            <tr>
+                <td align="center">100004</td>
+                <td align="center">吴**</td>
+                <td align="center">女</td>
+                <td align="center">58</td>
+                <td align="center">赵医生</td>
+                <td align="center">呼吸困难严重，体虚、多汗，经常失眠，有甲状腺家族病史……</td>
+                <td align="center"><a href="info.html">编辑</a> | <a href="info.html">删除</a></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="clear"></div>
+    <div id="dcFooter">
+        <div id="footer">
+            <div class="line"></div>
+            <ul>
+                版权所有 © 2013-2015 <a href="http://www.bootstrapmb.com/" title="bootstrapmb">Reserved</a>，并保留所有权利。
+            </ul>
+        </div>
+    </div><!-- dcFooter 结束 -->
+    <div class="clear"></div> </div>
+</body>
+</html>

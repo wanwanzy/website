@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>管理中心 - 病患列表 </title>
+    <meta name="Copyright" content="Douco Design." />
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script>
+        function toggleList(id) {
+            var list = document.getElementById(id);
+            if (list.style.display === "block") {
+                list.style.display = "none";
+            } else {
+                list.style.display = "block";
+            }
+        }
+    </script>
+    <style>
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="dcWrap">
+    <div id="dcHead"style="background-color: #3e454b">
+        <div id="head">
+            <div class="logo"style="background-color: #60BBFF"><a href="index.html"></a></div>
+            <!--  </div>-->
+            <div style="width: 86%;float: right">
+                <p style="text-align: center;color: #fff;font-size: 20px;padding: 5px ;font-family:宋体;">医 学 影 像 智 能 辅 助 诊 断 系 统</p>
+            </div>
+        </div>
+    </div>
+    <!-- dcHead 结束 --> <div id="dcLeft"><div id="menu">
+    <ul class="top">
+        <li><a href="#"><i class="home"></i><em>管理首页</em></a></li>
+    </ul>
+    <ul class="bot">
+        <li><a href="#"><i class="backup"></i><em>我的问诊</em></a></li>
+    </ul>
+    <ul>
+        <li ><a href="patient.html"><i class="patient"></i><em>患者列表</em></a></li>
+        <li style="margin-left: 15px"><a href="info.html"><i class="nav"  ></i><em>具体信息</em></a></li>
+        <li class="cur"style="background: #3e454b url(images/menu_cur.gif) no-repeat right 50%;"><a href="info.html"style="margin-left: 15px"><i class="page"></i><em>报告生成</em></a></li>
+        <li style="margin-left: 15px"><a href="fina-report.html"><i class="articleCat"></i><em>最终报告</em></a></li>
+    </ul>
+    <ul>
+        <li ><a href="#"><i class="mobile"></i><em>消息中心</em></a></li>
+    </ul>
+    <ul>
+        <li><a href="#"><i class="theme"></i><em>个人中心</em></a></li>
+    </ul>
+</div></div>
+    <div id="dcMain">
+        <!-- 当前位置 -->
+        <div id="urHere">管理中心<b>></b><strong>初步报告生成</strong> </div>
+        <div class="mainBox imgModule">
+            <h3>初始报告</h3>
+            <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+                <tr >
+                    <td style="font-size: 14px;font-family: 楷体;text-align: center; ">
+                        <div style="width:100%;">
+                            <div style="width: 100%; font-size: 14px;font-family: 楷体;float:left">
+                                <div style="width: 30%;float: left "><b> 姓名 : 李**</b></div>
+                                <div style="width: 30%;  float: left"><b> 性别 ：男</b></div>
+                                <div style="width: 30%; float: left "><b> 年龄 : 41</b></div>
+                                <div style="width: 30%; float: left "><b> 主治医师 ：李向阳</b></div>
+                                <div style="width: 30%; float: left "><b> 过敏史 ：无</b></div>
+                                <div style="width: 30%; float: left "><b> 日期 ：2023-09-17</b></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="font-size: 14px;font-family: 楷体; ">
+                        <div style="width:100%;   background-color: #135f3e ; ">
+                            <form style="background-color: #135f3e  ">
+                                <div style="width:50%; float:left">
+                                    <b>钙化：
+                                        <input  type="radio" id="wugaihua" name="fruit" value="apple"   >
+                                        <label for="wugaihua">无钙化</label>
+                                        <input style="accent-color: red;"type="radio" id="gaihua" name="fruit" value="apple"  checked>
+                                        <label for="gaihua">有钙化</label>
+                                    </b>
+                                </div>
+                            </form>
+                            <form style="background-color: #135f3e ; ">
+                                <div style="width:50%; float:left">
+                                    <b>性质：
+                                        <input type="radio" id="wugaihua1" name="fruit" value="apple"   >
+                                        <label for="wugaihua1">囊性为主</label>
+                                        <input type="radio" id="gaihua1" name="fruit" value="apple"  checked>
+                                        <label for="gaihua1">实性为主</label>
+                                    </b>
+                                </div>
+                            </form>
+                            <form style="background-color: #135f3e ; ">
+                                <b style="height:30%;margin-top: 10px;">
+                                    <div style="width:50%; float:left">
+                                        <b>回声：
+                                            <input  type="radio" id="wugaihua2" name="fruit" value="apple"  checked>
+                                            <label for="wugaihua2">低回声</label>
+                                            <input  type="radio" id="gaihua2" name="fruit" value="apple"   >
+                                            <label for="gaihua2">等回声/高回声</label>
+                                        </b>
+                                    </div>
+                                </b>
+                            </form>
+                            <form style="background-color: #135f3e ; ">
+
+                                <div style="width:50%;float: left; ">
+                                    <b>边缘：
+                                        <input  type="radio" id="wugaihua3" name="fruit" value="apple"   >
+                                        <label for="wugaihua3">边缘清晰</label>
+                                        <input type="radio" id="gaihua3" name="fruit" value="apple"  checked>
+                                        <label for="gaihua3">边缘模糊</label>
+                                    </b>
+                                </div>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="width: 100%;  text-align: center">
+                            <img style="width:40%" src="images/report1.png"/>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="width:100%;height:70%;font-size: 14px;font-family: 楷体;text-align: left;line-height: 2;">
+                            <div style="margin-top: 40px;margin-bottom: 40px;margin-left: 50px">
+                                <b >
+                                    预测结果：
+                                </b>
+                                <b >
+                                    在左叶中部，发现一个实性低回声结节，大小约为0.5x0.7x0.6cm。结节的形状不规则，边界不清晰，内部模糊。内部显示点状高回声灶，可能与结节内的血管供应有关。建议进行进一步的评估和诊断。
+                                </b>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div style="width: 100%; margin-bottom: 20px;text-align: center">
+                            <button class="fancy-button">生成报告</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div id="dcFooter">
+    <div id="footer">
+        <div class="line"></div>
+        <ul>
+        </ul>
+    </div>
+</div><!-- dcFooter 结束 -->
+<div class="clear"></div> </div>
+</body>
+</html>
